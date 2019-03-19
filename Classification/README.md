@@ -1,3 +1,3 @@
 # Classification
 ## Perceptron
-### Pocket Algprithm
+### Pocket Algorithm
