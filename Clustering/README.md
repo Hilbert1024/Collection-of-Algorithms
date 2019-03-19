@@ -1,2 +1,2 @@
-#Clustering Algorithm
-##Kmeans/Spectral clustering
+# Clustering Algorithm
+## Kmeans/Spectral clustering
