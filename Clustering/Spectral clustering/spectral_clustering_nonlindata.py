@@ -2,7 +2,7 @@ import numpy as np
 import scipy.io as sio
 import matplotlib.pyplot as plt
 
-datapath=r'C:\Users\Hilbert\Desktop\大数据算法\kmeans\kmeansnonlindata.mat'
+datapath='kmeansnonlindata.mat'
 matdata=sio.loadmat(datapath)
 data=matdata['X']
 size=len(data)
