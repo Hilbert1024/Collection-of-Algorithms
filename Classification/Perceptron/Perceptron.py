@@ -34,9 +34,9 @@ class Perceptron():
     对于线性不可分数据，我们只能设置最大迭代次数来终止循环
     """
 
-    def __init__(self, dimension):
+    def __init__(self):
         self.maxIter = 10000
-        self.weight = np.zeros(dimension) #初始化参数
+        self.weight = 0 #初始化参数
         self.bias = 0
         self.learning_rate = 1
 
@@ -45,6 +45,7 @@ class Perceptron():
         """
         训练模型。
         """
+        self.weight = np.zeros(len(data_train[0])-1)
 
         while(self.maxIter>0):
             Flag = True
@@ -75,9 +76,9 @@ class Perceptron_Pocket():
     口袋算法为了处理非线性可分数据,它保证每一次改变都是最好的线段,但必须人为限制迭代次数
     """
 
-    def __init__(self, dimension):
+    def __init__(self):
         self.maxIter = 5000
-        self.weight = np.zeros(dimension) #初始化参数
+        self.weight = 0 #初始化参数
         self.bias = 0
         self.learning_rate = 0.1
 
@@ -86,6 +87,7 @@ class Perceptron_Pocket():
         """
         训练模型。
         """
+        self.weight = np.zeros(len(data_train[0])-1)
 
         while(self.maxIter>0):
             for vec in data_train:
@@ -119,8 +121,8 @@ if __name__ == '__main__':
     data_test = load_data(test_file)
 
     #使用训练集训练感知机模型
-    Perceptron = Perceptron(2)
-    Perceptron_Pocket = Perceptron_Pocket(2)
+    Perceptron = Perceptron()
+    Perceptron_Pocket = Perceptron_Pocket()
     Perceptron.train(data_train)
     Perceptron_Pocket.train(data_train)
 
