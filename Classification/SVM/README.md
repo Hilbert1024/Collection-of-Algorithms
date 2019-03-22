@@ -9,6 +9,6 @@ We use kernel trick to deal with nonlinear classification problem.
 ## SMO
 Sequential minimal optimization (SMO) is an algorithm for solving the quadratic programming (QP) problem that arises during the training of support vector machines (SVM).
 ## Files
-svm_kernel : With Gaussian kernel and SMO algorithm, the resluts is 
+svm_kernel : With Gaussian kernel and SMO algorithm, the results is 
 + train accuracy: 95.0%
 + test accuracy: 95.5%
