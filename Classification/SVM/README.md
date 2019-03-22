@@ -6,3 +6,9 @@ If the training data is linearly separable, we can select two parallel hyperplan
 If the training data is not linearly separable,for data on the wrong side of the margin, the function's value is proportional to the distance from the margin.
 ## Kernel SVM
 We use kernel trick to deal with nonlinear classification problem.
+## SMO
+Sequential minimal optimization (SMO) is an algorithm for solving the quadratic programming (QP) problem that arises during the training of support vector machines (SVM).
+## Files
+svm_kernel:with Gaussian kernel and SMO algorithm,the resluts is 
++ train accuracy: 95.0%,
++ test accuracy: 95.5%.
