@@ -1,5 +1,5 @@
 # Logistic Regression
-Gradient descent method.
+In statistics, the logistic model (or logit model) is a widely used statistical model that, in its basic form, uses a logistic function to model a binary dependent variable; many more complex extensions exist. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model; it is a form of binomial regression. 
 
 ## Two-classification
 dataset = data/test_linear.txt
